@@ -1,0 +1,104 @@
+CSGO提升FPS和游戏质量的方法（对其他游戏也有试用之处）:
+
+一、FPS的提升
+1.升级CPU、GPU、内存、固态硬盘
+2.有高帧率显示器，桌面右键>显示设置>显示>高级显示设置>显示适配器属性-这里面可以调整屏幕刷新率和游戏画面缩放全屏
+3.控制面板>电源选项>高性能（甚至设置卓越性能）
+4.到笔记本官网回装出厂时的显卡驱动
+5.Windows设置>游戏>DVR-关闭
+6.到\steam\steamapps\common\Counter-Strike Global Offensive里右键csgo.exe-属性-兼容性-禁用全屏优化打勾
+7.桌面右键>NVDIA控制面板>管理3D设置>全局设置
+  CDDA-全部
+  三重缓冲-关
+  垂直同步-关
+  平滑处理模式-应用控制（多重采样抗锯齿模式和快速近似抗锯齿）
+  各项异性过滤-应用控制（贴图过滤模式）
+  灰度纠正-关
+  平滑处理透明度-关
+  最大预渲染帧数-1
+  环境光吸收-关
+  电源管理模式-最高性能优先
+  着色缓存器-开
+  三线性优化-开
+  各向异性采样优化-开
+  负LOD偏移-允许
+  质量-高性能
+  线程优化-开
+  虚拟现实预渲染帧数-1
+8.游戏时不要打开其他占CPU和内存的东西，可以到任务管理器查看和关闭
+9.游戏视频设置为低分辨率，低画质，多核CPU要开多核渲染
+ 
+二、启动项
+steam>右键CSGO>属性>常规>设置启动选项
+推荐选项-freq 144 -tickrate 128 -novid -nojoy  -language english  -high 
+csgo点位可以在英文或中文模式下跑图，左上角会显示你所在位置的官方名称
+
+三、DPI
+首先，控制面板>鼠标-指针移动速度6，提高指针精确度关闭，游戏中鼠标原始数据输入开启
+eDPI=DPI*Sensitivity（狙击枪还要*Zoom Sensitivity，一般设为1，表示开镜从一点移到另一点的鼠标移动范围与不开镜时一样）
+
+
+四、CONFIG
+config很多复杂的参数只需要放在一个写字板里面，然后在游戏中的控制台中，一键注入就可以完成。
+包括游戏设置、练枪跑图。
+
+下载config，比如到https://prosettings.net/counterstrike/s1mple/
+然后将其放置在\steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg文件夹中，
+重命名为你能记住的XX.cfg
+在游戏界面打开控制台键入exec XX.cfg即可。
+如果是练枪跑图的config，选择机器人练习赛和相应地图，进入游戏打开控制台键入exec XX.cfg即可。
+
+职业哥的config为了比赛立刻调整到自己的设置，
+包含了视频，声音，准星，Viewmodel，HUD，雷达，绑定建
+过于复杂。下面三张创意工坊可以代替
+Crashz' Crosshair Generator调整准星。选择style，再选择size，thickness，gap，outline，dot，color，alpha即可。
+Crashz' Viewmodel Generator调整持枪视角和手臂晃动。晃动停止意味着准星复原，所谓急停正在于此！
+config generator HUD（屏幕上显示你的游戏信息）和Radar的位置和大小。雷达范围大一些方便观察局势。
+
+控制台命令具体可以在这里学习https://totalcsgo.com/commands
+
+烟闪雷可以绑定ZXC键
+为了防止切刀后看到敌人，应该在游戏设置里绑定主枪械
+为了缩短下包时间，绑定雷包
+
+五、道具
+烟闪雷教学在steam>社区>创意工坊>搜索-Dolnma，
+有Dust2，Mirage，Inferno，Cache，Overpass，Cobblestone的
+
+六、体验CSGO所有刀
+1.创建本地服务器，比如机器人练习赛和创意工坊地图
+2.打开控制台，开启作弊模式，输入命令：sv_cheats 1
+3.mp_drop_knife_enable 1，按G扔掉手中的匕首
+4.比如想试爪子刀，
+  -give weapon_knife_karambit;ent_fire weapon_knife addoutput "classname weapon_knifegg"
+
+下面的只要替换里面那个刀的英文即可：
+流浪者匕首outdoor
+骷髅匕首skeleton
+求生匕首canis
+系绳匕首cord
+海豹短刀/经典匕首css
+熊刀ursus
+折刀gypsy_jackknife
+短剑stiletto
+锯齿爪刀widowmaker
+折叠刀flip
+穿肠刀gut
+爪子刀karambit
+M9 刺刀m9_bayonet
+猎杀者匕首tactical
+蝴蝶刀butterfly
+弯刀falchion
+暗影双匕push
+鲍伊猎刀survival_bowie
+幽灵之刃ghost
+
+特殊的几个如下输入即可：
+刺刀give weapon_bayonet;ent_fire weapon_knife addoutput "classname weapon_knifegg"
+金刀give weapon_knifegg;ent_fire weapon_knife addoutput "classname weapon_knifegg"
+CT默认匕首give weapon_knife
+T默认匕首give weapon_knife_t
+
+单机版和某些大型社区服的VIP可以体验各种皮肤
+
+七、CSGO新闻赛事选手信息的第一手网站www.hltv.org
