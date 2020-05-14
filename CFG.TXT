@@ -1,38 +1,38 @@
-��ϸ��config����дCFG��
+详细讲config（缩写CFG）
 
-һ��
-����https://prosettings.net/counterstrike/s1mple/����s1mple��config��
-��ѹ���������ļ�config.cfg��video.txt��autoexec.cfg
-�������ļ�������s1mple���е��������ã�s1mple��������ֻ����������ļ����ǵ�steam�ļ�����ͬ���ļ���
-ͬʱӲ���ϣ����Ӻ���ꡢ���桢���̡�������Ȼ�����ú���ʾ����
-���ɽ�����Ϸ������
+一、
+进入https://prosettings.net/counterstrike/s1mple/下载s1mple的config，
+解压后有三个文件config.cfg和video.txt和autoexec.cfg
+这三个文件包含了s1mple所有的软件设置，s1mple到赛场上只需把这三个文件覆盖掉steam文件夹下同名文件；
+同时硬件上，连接好鼠标、鼠标垫、键盘、耳机，然后设置好显示器；
+即可进入游戏热身。
 
-����
-config.cfg��video.txtλ��\steam\userdata\YOURSTEAMID\730\local\cfg��config.cfg��������Ϸʱ�Զ��ش����������������Ϸ�����пɶ������ã�
-����׼�ǡ��״�󶨼���HUD����ꡢ��Ƶ�ȣ�ע��video.txt��config.cfgû�еĲ�����Ƶ�趨������ֱ��ʣ������ߵ��κβ�������һ�µġ�
-���Ƽ������Ŵ��⹤����ͼ���Ƕ�config.cfg�����޸ģ��������Ѿ��ĺ���׼�ǣ�ֻҪû���ٸı�׼�Ƕ��һ�����̨����û��config.cfg���´ν���Ϸ�������׼�ǡ�
-����̨������Ҳ�Ǵ������ͬ��������̨����bind n +jump��N��Ϊ�����´ν���ϷN��������ȡ��Ҫ����unbind n������N���Ͳ������ˡ�
+二、
+config.cfg和video.txt位于\steam\userdata\YOURSTEAMID\730\local\cfg，config.cfg在你玩游戏时自动地创建，包含玩家在游戏中所有可定制设置，
+比如准星、雷达、绑定键、HUD、鼠标、音频等；注意video.txt是config.cfg没有的部分视频设定，比如分辨率，对两者的任何操作都是一致的。
+我推荐的三张创意工坊地图就是对config.cfg进行修改，比如你已经改好了准星，只要没有再改变准星而且还是这台电脑没管config.cfg，下次进游戏还是这个准星。
+控制台的命令也是存在这里，同理，控制台输入bind n +jump绑定N键为跳，下次进游戏N还是跳。取消要输入unbind n，马上N键就不能跳了。
 
-�����鲻Ҫ�Ѹ��˶��Ʒ���config.cfg����Ϊ�����Ա�CSGO���ǣ����ǰ����Ƿ���autoexec.cfg��
-����󶨼��Ŀ���̨�������д�����棬�����ǣ��ü��±���autoexec.cfg�����Ʋ����д�������д�󶨼�config�����档
-autoexec.cfgλ��\steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg��autoexec.cfg����˼��ÿ��������Ϸʱ���Զ�����
-����������У����Գ������·���1.�������һ��host_writeconfig 2.������+exec autoexec.cfg 3.���������Ϸ�и�д��autoexec.cfg��
-����̨����exec autoexec����ɶ�ȡ�¸ĵ��趨��
+但建议不要把个人定制放在config.cfg，因为它可以被CSGO覆盖，而是把它们放在autoexec.cfg，
+比如绑定键的控制台命令可以写在里面，方法是：用记事本打开autoexec.cfg（名称不能有错），编写绑定键config，保存。
+autoexec.cfg位于\steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg，autoexec.cfg顾名思义每次启动游戏时会自动运行
+（如果不运行，可以尝试以下方法1.输入最后一行host_writeconfig 2.启动项+exec autoexec.cfg 3.如果你在游戏中改写了autoexec.cfg，
+控制台输入exec autoexec命令可读取新改的设定）
 
-���������������㻹���Դ�������config�ļ�������practice.cfg������ǹ������ͼ�����Ա��浽\csgo\cfg�ļ����У�
-����ϰ��ͼ�е�������̨������exec practice.cfg,��Ϸ�ͻ����������practice���á�
+除了上面三个，你还可以创建其他config文件，比如practice.cfg用于练枪道具跑图，可以保存到\csgo\cfg文件夹中，
+在练习地图中调出控制台，输入exec practice.cfg,游戏就会加载你的这个practice设置。
 
-����
-��������s1mple��config.cfg�����Ʋ����д���ʱ����ð��Լ���config.cfg���е����汸���ļ��У�ͬʱ������ճ����
-\steam\userdata\YOURSTEAMID\730\local\cfg���������������s1mple��ϲ�����ٰ�ԭ���Լ��Ļ���ȥ������ô�򵥣�
-������ȥ��ᷢ���ʺ��Լ��Ĳ�����õģ���ʱ�����ȥǰ���ᵽ���������⹤�������Լ�ϲ���ģ�
+三、
+我们试用s1mple的config.cfg（名称不能有错）时，最好把自己的config.cfg剪切到桌面备份文件夹，同时把他的粘贴到
+\steam\userdata\YOURSTEAMID\730\local\cfg，如果你体验完了s1mple不喜欢，再把原来自己的换回去。就这么简单！
+换来换去你会发现适合自己的才是最好的，这时你可以去前面提到的三个创意工坊设置自己喜欢的！
 
-�ġ�
-1���ο���ַhttps://prosettings.net/library/how-to-use-cs-go-config-autoexec/
-           https://www.prosettings.com/csgo-config-autoexec-guide/
-2�������ֳ�ְҵѡ��CFG�Ʋ�https://prosettings.net/counterstrike/s1mple/
-3��˽�˶��ư󶨼��Ʋ�https://bzl.no/csgo/��׼�����Ӳ����ã�׼���Ʋ�       
+四、
+1、参考网址https://prosettings.net/library/how-to-use-cs-go-config-autoexec/
+          https://www.prosettings.com/csgo-config-autoexec-guide/
+2、想用现成职业选手CFG移步https://prosettings.net/counterstrike/s1mple/
+3、私人订制绑定键移步https://bzl.no/csgo/（准星链接不能用）准星移步       
    https://tools.dathost.net/#alpha=200/color=5/color_b=50/color_r=50/color_g=250/dot=0/
    gap=0/size=5/style=4/usealpha=1/thickness=0.5/outline=0/outline_draw=0
-4��config����һЩ����ָ̨�������Ϸ�������������ÿ���̨���ĸ����趨���Ʋ�https://totalcsgo.com/commands
-   �����и�������ķ����ÿ������Ľ���˵������ʵ��һЩ����ľ͹��ˡ�
+4、config就是一些控制台指令，想在游戏里随心所欲地用控制台更改各种设定，移步https://totalcsgo.com/commands
+   里面有各种命令的分类和每种命令的解释说明，其实会一些必须的就够了。
